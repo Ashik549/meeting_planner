@@ -4,7 +4,9 @@ from datetime import datetime
 # Create your views here.
 
 def welcome(request):
-    return HttpResponse("Welcome to the Meeting Planner!")
+    return render(request, "website/welcome.html",
+                  {"var_1": "This data was sent from views file.",
+                   "link": "https://pluralsight.com"})
 
 def date(request):
     return HttpResponse("The currtent time is: " + str(datetime.now()))
