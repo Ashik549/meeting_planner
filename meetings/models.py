@@ -12,7 +12,7 @@ class Room(models.Model):
         return f"{self.name}: room {self.room_number} on floor {self.floor}"
 
 
-class Meetings(models.Model):
+class Meeting(models.Model):
     title = models.CharField(max_length=200)
     date = models.DateField()
     start_time = models.TimeField(default=time(9))
