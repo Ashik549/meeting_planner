@@ -13,6 +13,16 @@
         Pluralsight</a>
     </p>
 
-    <p>There are total {{ meeting_count }} meetings pending now.</p>
+    <h2>Meetings</h2>
+    <ul>
+        {% for meeting in meetings %}
+            <li>
+                <a href = '{% url 'detail' meeting.id %}'>{{ meeting.title }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+
+    <p>
+        <h5><a href = "{% url 'rooms' %}">Rooms' Details</a><h5>
 </body>
 </html>
