@@ -12,7 +12,7 @@ A simple meeting planner website which I used to learn django. Features of this 
 * django version 3.0.7
 
 
-***Classes in the Code***:
+***Classes***:
 1) **Rooms**: this class' objects hold each of the record of rooms.
 
 2) **Meetings**: this class' objects hold record of the planned meetings.
