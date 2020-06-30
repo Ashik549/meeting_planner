@@ -1,4 +1,4 @@
-# ride-selection
+# Meeting Planner
 A simple meeting planner website which I used to learn django. Features of this website are:
 * Viewing the list of all the planned meetings in the homepage
 * The details of the meetings and the rooms.
